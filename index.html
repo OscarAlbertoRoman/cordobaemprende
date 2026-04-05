@@ -856,6 +856,206 @@
     .fade-in:nth-child(5) { transition-delay: 0.4s; }
 
     /* ============================================================
+       MEJORA 3 — Foto real de orador
+    ============================================================ */
+    .foto-orador {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #7C3AED;
+      box-shadow: 0 4px 14px rgba(124,58,237,0.4);
+      margin: 0 auto 1.25rem;
+      display: block;
+    }
+
+    /* ============================================================
+       MEJORA 4 — Mapa del Hotel Eleton
+    ============================================================ */
+    .mapa-wrap {
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    .mapa-wrap h3 {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+    }
+
+    .mapa-wrap img {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 8px 28px rgba(0,0,0,0.45);
+    }
+
+    .mapa-direccion {
+      margin-top: 0.75rem;
+      font-size: 0.82rem;
+      color: rgba(196,181,253,0.65);
+    }
+
+    /* ============================================================
+       MEJORA 8 — FAQ acordeón
+    ============================================================ */
+    #faq {
+      background: rgba(76,29,149,0.07);
+    }
+
+    .faq-lista {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq-item {
+      background: rgba(124, 58, 237, 0.1);
+      border: 1px solid rgba(124, 58, 237, 0.3);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      overflow: hidden;
+    }
+
+    .faq-pregunta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--texto);
+      font-size: 0.98rem;
+      user-select: none;
+      gap: 1rem;
+    }
+
+    .faq-pregunta:hover { background: rgba(124,58,237,0.08); }
+
+    .faq-icono {
+      flex-shrink: 0;
+      font-size: 1.3rem;
+      font-weight: 300;
+      color: var(--acento);
+      line-height: 1;
+      transition: transform 0.3s ease;
+    }
+
+    .faq-item.abierto .faq-icono {
+      transform: rotate(45deg);
+    }
+
+    .faq-respuesta {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.35s ease, padding 0.25s ease;
+      padding: 0 20px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.93rem;
+      line-height: 1.7;
+    }
+
+    .faq-item.abierto .faq-respuesta {
+      max-height: 300px;
+      padding: 0 20px 18px;
+    }
+
+    /* ============================================================
+       MEJORA 7 — Botón flotante WhatsApp
+    ============================================================ */
+    .btn-flotante-wa {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 9999;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: #25D366;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37, 211, 102, 0.5);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-flotante-wa:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 28px rgba(37, 211, 102, 0.65);
+      text-decoration: none;
+    }
+
+    .btn-flotante-wa i {
+      font-size: 28px;
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .btn-flotante-wa {
+        width: 52px;
+        height: 52px;
+        bottom: 16px;
+        right: 16px;
+      }
+      .btn-flotante-wa i { font-size: 24px; }
+    }
+
+    /* ============================================================
+       MEJORA 9 — Botones para compartir
+    ============================================================ */
+    .compartir-wrap {
+      display: none;
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    .compartir-wrap p {
+      font-size: 0.82rem;
+      color: rgba(255,255,255,0.6);
+      margin-bottom: 0.75rem;
+    }
+
+    .btn-compartir {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      border-radius: 8px;
+      padding: 10px 18px;
+      font-size: 14px;
+      font-weight: 600;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      margin-top: 0;
+      margin-right: 8px;
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .btn-compartir:hover {
+      opacity: 0.88;
+      transform: translateY(-1px);
+      text-decoration: none;
+      color: #fff;
+    }
+
+    .btn-compartir-wa  { background: #25D366; }
+    .btn-compartir-fb  { background: #1877F2; }
+
+    /* ============================================================
+       MEJORA 10 — Micro-copy de confianza
+    ============================================================ */
+    .micro-copy {
+      display: block;
+      font-size: 12px;
+      color: rgba(255,255,255,0.5);
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* ============================================================
        RESPONSIVE AJUSTES MENORES
     ============================================================ */
     @media (max-width: 600px) {
@@ -1099,7 +1299,7 @@
 
         <!-- Orador 1 -->
         <div class="card-orador fade-in">
-          <div class="avatar avatar-gv">GV</div>
+          <img src="img/gustavo.png" alt="Gustavo Villalba" class="foto-orador" />
           <span class="orador-tag">Desarrollo Local</span>
           <h3>Gustavo Villalba</h3>
           <p>Turismo, desarrollo local, inversión y crecimiento económico en el contexto de la nueva Argentina.</p>
@@ -1107,7 +1307,7 @@
 
         <!-- Orador 2 -->
         <div class="card-orador fade-in">
-          <div class="avatar avatar-is">IS</div>
+          <img src="img/ivan.png" alt="Iván Schuf" class="foto-orador" />
           <span class="orador-tag">Educación Financiera</span>
           <h3>Iván Schuf</h3>
           <p>Educación financiera aplicada y creador de "El Soberano", el simulador que transforma la relación de las personas con el dinero.</p>
@@ -1158,6 +1358,94 @@
           <h3>Capacidad</h3>
           <p>250 personas</p>
           <div class="badge-capacidad"><i class="fa-solid fa-fire"></i> Cupos limitados</div>
+        </div>
+
+      </div>
+
+      <!-- Mapa del Hotel Eleton -->
+      <div class="mapa-wrap">
+        <h3><i class="fa-solid fa-map-location-dot" style="color:var(--acento);"></i> &nbsp;Cómo llegar</h3>
+        <img src="img/eletonmapa.png" alt="Mapa Hotel Eleton — Villa Carlos Paz" />
+        <p class="mapa-direccion">Hotel Eleton · Av. Pablo Ricchieri, Villa Carlos Paz</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       8. FAQ — Preguntas frecuentes
+  ============================================================ -->
+  <section id="faq" class="seccion">
+    <div class="contenedor">
+      <h2 class="seccion-titulo">Preguntas <span class="texto-gradiente">frecuentes</span></h2>
+      <div class="divisor"></div>
+
+      <div class="faq-lista">
+
+        <!-- P1 -->
+        <div class="faq-item">
+          <div class="faq-pregunta">
+            ¿El evento tiene costo?
+            <span class="faq-icono">+</span>
+          </div>
+          <div class="faq-respuesta">
+            No. La entrada es completamente gratuita. Solo necesitás registrarte para reservar tu lugar ya que los cupos son limitados.
+          </div>
+        </div>
+
+        <!-- P2 -->
+        <div class="faq-item">
+          <div class="faq-pregunta">
+            ¿Puedo llevar a un amigo o colega?
+            <span class="faq-icono">+</span>
+          </div>
+          <div class="faq-respuesta">
+            ¡Por supuesto! Cuantos más, mejor. Cada persona debe registrarse individualmente para garantizar su lugar.
+          </div>
+        </div>
+
+        <!-- P3 -->
+        <div class="faq-item">
+          <div class="faq-pregunta">
+            ¿Hay estacionamiento en el lugar?
+            <span class="faq-icono">+</span>
+          </div>
+          <div class="faq-respuesta">
+            Sí. El Hotel Eleton dispone de estacionamiento propio y también hay opciones en la zona. Te recomendamos llegar desde las 17:30 hs para acreditarte sin apuro.
+          </div>
+        </div>
+
+        <!-- P4 -->
+        <div class="faq-item">
+          <div class="faq-pregunta">
+            ¿Se entrega certificado de asistencia?
+            <span class="faq-icono">+</span>
+          </div>
+          <div class="faq-respuesta">
+            Sí. Todos los asistentes recibirán un certificado digital de participación al finalizar el evento.
+          </div>
+        </div>
+
+        <!-- P5 -->
+        <div class="faq-item">
+          <div class="faq-pregunta">
+            ¿Qué es "El Soberano"?
+            <span class="faq-icono">+</span>
+          </div>
+          <div class="faq-respuesta">
+            Es un juego de simulación financiero creado por Iván Schuf que permite tomar decisiones reales de inversión y emprendimiento en un entorno controlado. Es la experiencia central del evento y lo que lo hace único.
+          </div>
+        </div>
+
+        <!-- P6 -->
+        <div class="faq-item">
+          <div class="faq-pregunta">
+            ¿A quién está dirigido el evento?
+            <span class="faq-icono">+</span>
+          </div>
+          <div class="faq-respuesta">
+            A emprendedores, inversores, profesionales y cualquier persona interesada en mejorar su educación financiera y entender las oportunidades del nuevo contexto económico argentino.
+          </div>
         </div>
 
       </div>
@@ -1246,13 +1534,37 @@
             Confirmar mi asistencia
           </button>
 
+          <!-- Micro-copy de confianza -->
+          <span class="micro-copy">🔒 Sin spam. Tus datos son solo para coordinar tu asistencia.</span>
+
           <!-- Mensajes de resultado -->
           <div class="form-mensaje exito" id="msg-exito">
             ✅ ¡Registro exitoso! Te esperamos el 24 de abril en el Hotel Eleton.
           </div>
+          <!-- Botones para compartir — visibles solo tras envío exitoso -->
+          <div class="compartir-wrap" id="compartir-wrap">
+            <p>¿Conocés a alguien que debería venir? Compartí el evento:</p>
+            <a
+              href="https://wa.me/?text=Sumate%20a%20C%C3%B3rdoba%20Emprende%20%E2%80%94%20un%20evento%20%C3%BAnico%20sobre%20emprendedurismo%20e%20inversi%C3%B3n.%20Registrate%20gratis%20en%3A%20https%3A%2F%2Fcordobaemprende.vercel.app"
+              target="_blank"
+              rel="noopener"
+              class="btn-compartir btn-compartir-wa"
+            >
+              <i class="fa-brands fa-whatsapp"></i> Compartir por WhatsApp
+            </a>
+            <a
+              href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fcordobaemprende.vercel.app"
+              target="_blank"
+              rel="noopener"
+              class="btn-compartir btn-compartir-fb"
+            >
+              <i class="fa-brands fa-facebook"></i> Compartir en Facebook
+            </a>
+          </div>
+
           <div class="form-mensaje error" id="msg-error">
             ❌ Hubo un problema. Intentá de nuevo o
-            <a href="https://wa.me/5493541623335" target="_blank" rel="noopener">escribinos por WhatsApp</a>.
+            <a href="https://wa.me/5493541623335?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20C%C3%B3rdoba%20Emprende%20%F0%9F%9A%80" target="_blank" rel="noopener">escribinos por WhatsApp</a>.
           </div>
 
         </form>
@@ -1268,7 +1580,7 @@
       <h2>¿Tenés alguna consulta?</h2>
       <p>Estamos disponibles para ayudarte con tu inscripción o cualquier duda sobre el evento.</p>
       <a
-        href="https://wa.me/5493541623335"
+        href="https://wa.me/5493541623335?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20C%C3%B3rdoba%20Emprende%20%F0%9F%9A%80"
         target="_blank"
         rel="noopener"
         class="btn-primario btn-whatsapp"
@@ -1410,6 +1722,55 @@
     })();
 
     /* ----------------------------------------------------------
+       FAQ — acordeón
+    ---------------------------------------------------------- */
+    (function () {
+      var items = document.querySelectorAll('.faq-item');
+
+      items.forEach(function (item) {
+        var pregunta = item.querySelector('.faq-pregunta');
+
+        pregunta.addEventListener('click', function () {
+          var estaAbierto = item.classList.contains('abierto');
+
+          // Cerrar todos
+          items.forEach(function (i) { i.classList.remove('abierto'); });
+
+          // Si no estaba abierto, abrir este
+          if (!estaAbierto) {
+            item.classList.add('abierto');
+          }
+        });
+      });
+    })();
+
+    /* ----------------------------------------------------------
+       FORMULARIO — mostrar botones de compartir al enviar
+       (se integra con el bloque de submit existente vía evento)
+    ---------------------------------------------------------- */
+    (function () {
+      var form          = document.getElementById('form-registro');
+      var compartirWrap = document.getElementById('compartir-wrap');
+
+      // Escuchar cuando el mensaje de éxito se muestra
+      var observer = new MutationObserver(function (mutaciones) {
+        mutaciones.forEach(function (m) {
+          if (m.type === 'attributes' && m.attributeName === 'style') {
+            var msgOk = document.getElementById('msg-exito');
+            if (msgOk && msgOk.style.display === 'block') {
+              compartirWrap.style.display = 'block';
+            }
+          }
+        });
+      });
+
+      var msgOk = document.getElementById('msg-exito');
+      if (msgOk) {
+        observer.observe(msgOk, { attributes: true });
+      }
+    })();
+
+    /* ----------------------------------------------------------
        ANIMACIONES DE ENTRADA — IntersectionObserver para .fade-in
     ---------------------------------------------------------- */
     (function () {
@@ -1433,6 +1794,20 @@
       elementos.forEach(function (el) { observer.observe(el); });
     })();
   </script>
+
+  <!-- ============================================================
+       BOTÓN FLOTANTE WHATSAPP (MEJORA 7)
+  ============================================================ -->
+  <a
+    href="https://wa.me/5493541623335?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20C%C3%B3rdoba%20Emprende%20%F0%9F%9A%80"
+    target="_blank"
+    rel="noopener"
+    class="btn-flotante-wa"
+    title="Escribinos por WhatsApp"
+    aria-label="Escribinos por WhatsApp"
+  >
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
 
 </body>
 </html>
