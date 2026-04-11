@@ -1713,21 +1713,6 @@
             // Éxito
             msgOk.style.display = 'block';
 
-            // Armar mensaje de WhatsApp con los datos del formulario
-            var nombre    = document.getElementById('nombre').value;
-            var localidad = document.getElementById('localidad').value;
-            var email     = document.getElementById('email').value;
-            var telefono  = document.getElementById('telefono').value;
-
-            var mensaje = '🎟 Nueva inscripción — Córdoba Emprende\n'
-              + '👤 Nombre: ' + nombre + '\n'
-              + '📍 Localidad: ' + localidad + '\n'
-              + '📧 Email: ' + email + '\n'
-              + '📱 Teléfono: ' + telefono;
-
-            var urlWA = 'https://wa.me/5493541583781?text=' + encodeURIComponent(mensaje);
-            window.open(urlWA, '_blank');
-
             form.reset();
             // Restaurar valor por defecto del campo localidad
             document.getElementById('localidad').value = 'Villa Carlos Paz';
