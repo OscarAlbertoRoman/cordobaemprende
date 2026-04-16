@@ -49,15 +49,15 @@
        VARIABLES Y RESET
     ============================================================ */
     :root {
-      --primario:   #4C1D95;
-      --violeta:    #7C3AED;
+      --primario:   #002D72;
+      --violeta:    #0055A4;
       --acento:     #F59E0B;
-      --fondo:      #0F0A1E;
-      --fondo-card: #1A1033;
-      --fondo-card2:#221640;
-      --texto:      #F3F0FF;
-      --texto-suave:#C4B5FD;
-      --borde:      rgba(124, 58, 237, 0.35);
+      --fondo:      #060D1A;
+      --fondo-card: #071626;
+      --fondo-card2:#0D1F3C;
+      --texto:      #F0F8FF;
+      --texto-suave:#93C5FD;
+      --borde:      rgba(0, 85, 164, 0.35);
     }
 
     *, *::before, *::after {
@@ -117,11 +117,11 @@
     }
 
     .acento { color: var(--acento); }
-    .violeta { color: #A78BFA; }
+    .violeta { color: #60A5FA; }
 
     /* Gradiente de texto */
     .texto-gradiente {
-      background: linear-gradient(135deg, #A78BFA 0%, var(--acento) 100%);
+      background: linear-gradient(135deg, #60A5FA 0%, var(--acento) 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -153,7 +153,7 @@
       border: none;
       cursor: pointer;
       transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.2s ease;
-      box-shadow: 0 4px 20px rgba(124, 58, 237, 0.5);
+      box-shadow: 0 4px 20px rgba(0, 85, 164, 0.5);
       text-decoration: none;
     }
 
@@ -202,8 +202,8 @@
       position: absolute;
       inset: 0;
       background:
-        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(76, 29, 149, 0.55) 0%, transparent 70%),
-        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(124, 58, 237, 0.25) 0%, transparent 60%),
+        radial-gradient(ellipse 80% 60% at 50% 0%, rgba(0, 45, 114, 0.55) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 40% at 80% 80%, rgba(0, 85, 164, 0.25) 0%, transparent 60%),
         var(--fondo);
       z-index: 0;
     }
@@ -215,7 +215,7 @@
       inset: 0;
       background-image:
         radial-gradient(circle, rgba(245,158,11,0.12) 1px, transparent 1px),
-        radial-gradient(circle, rgba(124,58,237,0.08) 1px, transparent 1px);
+        radial-gradient(circle, rgba(0,85,164,0.08) 1px, transparent 1px);
       background-size: 60px 60px, 90px 90px;
       background-position: 0 0, 30px 30px;
       z-index: 0;
@@ -232,7 +232,7 @@
       width: 200px;
       margin: 0 auto 1.25rem;
       display: block;
-      filter: drop-shadow(0 4px 12px rgba(124,58,237,0.4));
+      filter: drop-shadow(0 4px 12px rgba(0,85,164,0.4));
     }
 
     /* Chip organizador */
@@ -240,9 +240,9 @@
       display: inline-flex;
       align-items: center;
       gap: 0.4rem;
-      background: rgba(124, 58, 237, 0.18);
-      border: 1px solid rgba(124, 58, 237, 0.4);
-      color: #C4B5FD;
+      background: rgba(0, 85, 164, 0.18);
+      border: 1px solid rgba(0, 85, 164, 0.4);
+      color: #93C5FD;
       font-size: 0.8rem;
       font-weight: 600;
       letter-spacing: 0.08em;
@@ -323,7 +323,7 @@
       font-size: clamp(1.8rem, 5vw, 2.6rem);
       font-weight: 800;
       line-height: 1;
-      background: linear-gradient(135deg, #A78BFA, var(--acento));
+      background: linear-gradient(135deg, #60A5FA, var(--acento));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
@@ -354,7 +354,7 @@
        SECCIÓN PROPÓSITO
     ============================================================ */
     #proposito {
-      background: linear-gradient(180deg, rgba(76,29,149,0.12) 0%, transparent 100%);
+      background: linear-gradient(180deg, rgba(0,45,114,0.12) 0%, transparent 100%);
     }
 
     .grid-pilares {
@@ -374,7 +374,7 @@
 
     .card-pilar:hover {
       transform: translateY(-6px);
-      box-shadow: 0 12px 32px rgba(124, 58, 237, 0.3);
+      box-shadow: 0 12px 32px rgba(0, 85, 164, 0.3);
       border-color: rgba(245, 158, 11, 0.4);
     }
 
@@ -387,8 +387,8 @@
       margin: 0 auto 1rem;
       border-radius: 14px;
       font-size: 1.5rem;
-      background: linear-gradient(135deg, rgba(76,29,149,0.6), rgba(124,58,237,0.4));
-      border: 1px solid rgba(124,58,237,0.3);
+      background: linear-gradient(135deg, rgba(0,45,114,0.6), rgba(0,85,164,0.4));
+      border: 1px solid rgba(0,85,164,0.3);
       color: var(--acento);
     }
 
@@ -407,7 +407,7 @@
        SECCIÓN ¿POR QUÉ ESTE EVENTO?
     ============================================================ */
     #porque {
-      background: rgba(76,29,149,0.08);
+      background: rgba(0,45,114,0.08);
     }
 
     .porque-grid {
@@ -498,7 +498,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(76,29,149,0.25) 0%, transparent 70%);
+      background: radial-gradient(ellipse 70% 50% at 50% 50%, rgba(0,45,114,0.25) 0%, transparent 70%);
       z-index: 0;
       pointer-events: none;
     }
@@ -559,7 +559,7 @@
        ORADORES
     ============================================================ */
     #oradores {
-      background: rgba(76,29,149,0.06);
+      background: rgba(0,45,114,0.06);
     }
 
     .grid-oradores {
@@ -582,7 +582,7 @@
 
     .card-orador:hover {
       transform: translateY(-6px);
-      box-shadow: 0 14px 36px rgba(124,58,237,0.3);
+      box-shadow: 0 14px 36px rgba(0,85,164,0.3);
     }
 
     /* Avatar con iniciales */
@@ -599,10 +599,10 @@
       font-weight: 800;
       color: #fff;
       border: 3px solid rgba(245,158,11,0.4);
-      box-shadow: 0 4px 14px rgba(124,58,237,0.4);
+      box-shadow: 0 4px 14px rgba(0,85,164,0.4);
     }
 
-    .avatar-gv { background: linear-gradient(135deg, #4C1D95, #7C3AED); }
+    .avatar-gv { background: linear-gradient(135deg, #002D72, #0055A4); }
     .avatar-is { background: linear-gradient(135deg, #1E3A8A, #3B82F6); }
     .avatar-ac { background: linear-gradient(135deg, #831843, #EC4899); }
 
@@ -635,7 +635,7 @@
        DATOS PRÁCTICOS
     ============================================================ */
     #datos {
-      background: linear-gradient(135deg, rgba(76,29,149,0.18) 0%, rgba(15,10,30,0.6) 100%);
+      background: linear-gradient(135deg, rgba(0,45,114,0.18) 0%, rgba(6,13,26,0.6) 100%);
     }
 
     .grid-datos {
@@ -695,13 +695,13 @@
        FORMULARIO
     ============================================================ */
     #registro {
-      background: linear-gradient(180deg, transparent, rgba(76,29,149,0.15) 50%, transparent);
+      background: linear-gradient(180deg, transparent, rgba(0,45,114,0.15) 50%, transparent);
     }
 
     .form-wrap {
       max-width: 560px;
       margin: 0 auto;
-      background: rgba(26,16,51,0.7);
+      background: rgba(7,22,38,0.7);
       border: 1px solid var(--borde);
       border-radius: 24px;
       padding: 2.5rem 2rem;
@@ -731,8 +731,8 @@
 
     .form-campo input {
       width: 100%;
-      background: rgba(15,10,30,0.6);
-      border: 1px solid rgba(124,58,237,0.35);
+      background: rgba(6,13,26,0.6);
+      border: 1px solid rgba(0,85,164,0.35);
       border-radius: 10px;
       color: var(--texto);
       font-family: 'Inter', sans-serif;
@@ -798,7 +798,7 @@
     ============================================================ */
     #cta-final {
       text-align: center;
-      background: linear-gradient(135deg, rgba(76,29,149,0.3) 0%, rgba(124,58,237,0.15) 100%);
+      background: linear-gradient(135deg, rgba(0,45,114,0.3) 0%, rgba(0,85,164,0.15) 100%);
       padding: 5rem 1.25rem;
     }
 
@@ -822,7 +822,7 @@
     ============================================================ */
     footer {
       background: rgba(0,0,0,0.4);
-      border-top: 1px solid rgba(124,58,237,0.2);
+      border-top: 1px solid rgba(0,85,164,0.2);
       padding: 2rem 1.25rem;
       text-align: center;
     }
@@ -871,8 +871,8 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 3px solid #7C3AED;
-      box-shadow: 0 4px 14px rgba(124,58,237,0.4);
+      border: 3px solid #0055A4;
+      box-shadow: 0 4px 14px rgba(0,85,164,0.4);
       margin: 0 auto 1.25rem;
       display: block;
     }
@@ -909,7 +909,7 @@
        MEJORA 8 — FAQ acordeón
     ============================================================ */
     #faq {
-      background: rgba(76,29,149,0.07);
+      background: rgba(0,45,114,0.07);
     }
 
     .faq-lista {
@@ -918,8 +918,8 @@
     }
 
     .faq-item {
-      background: rgba(124, 58, 237, 0.1);
-      border: 1px solid rgba(124, 58, 237, 0.3);
+      background: rgba(0, 85, 164, 0.1);
+      border: 1px solid rgba(0, 85, 164, 0.3);
       border-radius: 10px;
       margin-bottom: 10px;
       overflow: hidden;
@@ -938,7 +938,7 @@
       gap: 1rem;
     }
 
-    .faq-pregunta:hover { background: rgba(124,58,237,0.08); }
+    .faq-pregunta:hover { background: rgba(0,85,164,0.08); }
 
     .faq-icono {
       flex-shrink: 0;
@@ -1081,9 +1081,6 @@
   ============================================================ -->
   <section id="hero">
     <div class="hero-contenido">
-
-      <!-- Logo La Libertad Avanza -->
-      <img src="img/libertadavanza.png" alt="La Libertad Avanza" class="hero-logo" />
 
       <!-- Chip organiza -->
       <div class="hero-chip">
